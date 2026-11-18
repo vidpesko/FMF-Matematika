@@ -17,7 +17,7 @@ h1, h2 {
 
 /* Naslovi razdelkov */
 h2 {
-  color: #8b4513;
+  color: #1f4e79;
   border-bottom: 1px solid #cccccc;
   clear: both;
 }
@@ -55,4 +55,5 @@ img {
   margin-top: 0.25em;
   font-size: 0.9em;
   color: #555555;
+  font-style: italic;
 }

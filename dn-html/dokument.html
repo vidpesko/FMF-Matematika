@@ -7,6 +7,7 @@
   Naloga 1. (3 točke) V tej datoteki so tri napake. Smiselno jih popravite.
   Pomagajte si s pogledom Problems v VSCode, kot na vajah.
 -->
+<!DOCTYPE html>
 <html lang="sl">
   <head>
     <meta charset="UTF-8">
@@ -15,25 +16,28 @@
          - barvo naslovov razdelkov h2 spremenite v #1f4e79,
          - pravilu za podnapise pod slikami (.podnapis) dodajte deklaracijo
            "font-style: italic;". -->
+    <link rel="stylesheet" href="./oblikovanje.css">
   </head>
   <body>
     <h1>Ekvivalentna doza banane</h1>
 
     <!-- Naloga 3. (1 točka) V naslednjem odstavku naj bo besedilo "Banana equivalent dose"
          povezava na članek na angleški Wikipediji (naslov je v komentarju na koncu odstavka). -->
-    <p>Vsebina te strani je prevedena in prirejena po članku Banana equivalent dose na angleški
-      Wikipediji. <!-- https://en.wikipedia.org/wiki/Banana_equivalent_dose --></p>
+    <p>Vsebina te strani je prevedena in prirejena po članku
+      <a href="https://en.wikipedia.org/wiki/Banana_equivalent_dose">Banana equivalent dose</a>
+      na angleški Wikipediji.</p>
 
-    <div>
+    <div class="slika">
       <!-- Naloga 4. (2 točki) Sem vstavite sliko banana.jpg.
            Nadomestno besedilo slike naj bo "Banana, vir kalija-40".
            Elementu div, v katerem sta slika in podnapis, dodajte atribut class
            z vrednostjo slika. -->
+      <img src="banana.jpg" alt="Banana, vir kalija-40">
       <p class="podnapis">Banana vsebuje naravno radioaktivni kalij-40.
         Foto: Evan-Amos, CC BY-SA 3.0</p>
     </div>
 
-    <p><strong>Ekvivalentna doza banane</strong> (angl. <em>banana equivalent dose<em>, BED) je
+    <p><strong>Ekvivalentna doza banane</strong> (angl. <em>banana equivalent dose</em>, BED) je
       neformalna enota za izpostavljenost ionizirajočemu sevanju.
       Z njo dozo sevanja primerjamo z dozo, ki jo prejmemo, če pojemo eno banano povprečne
       velikosti. Banane namreč vsebujejo naravno radioaktivni izotop kalij-40.
@@ -46,7 +50,7 @@
       pomaga, ko javnosti razlaga zanemarljivo majhne doze in prav tako majhna tveganja.
       Za banano z maso 150 g je predlagal vrednost približno 0,1 μSv.</p>
 
-    <h2>Uporaba</h3>
+    <h2>Uporaba</h2>
 
     <p>Ekvivalentna doza banane je neformalna enota, zato so vse primerjave le približne.
       Doza, ki jo prejmemo z eno banano, je približno odstotek povprečne dnevne izpostavljenosti
@@ -56,33 +60,47 @@
     <!-- Naloga 5. (2 točki) Spodnje doze zapišite kot tabelo s tremi stolpci.
          Vsaka celica je v svoji vrstici, vrstice tabele pa so ločene s prazno vrstico.
          Prva vrstica tabele je glava; za njene celice uporabite primerno značko. -->
-    Vir sevanja
-    Doza
-    Število banan
-
-    Ena banana
-    0,1 μSv
-    1
-
-    Povprečna dnevna izpostavljenost sevanju iz okolja
-    10 μSv
-    100
-
-    Bivanje 16 km od jedrske elektrarne Three Mile Island med nesrečo leta 1979
-    80 μSv
-    800
-
-    Največja dovoljena letna doza zaradi izpustov iz jedrske elektrarne
-    250 μSv
-    2 500
-
-    Računalniška tomografija prsnega koša
-    7 mSv
-    70 000
-
-    Smrtna doza
-    3,5 Sv
-    35 000 000
+    <table>
+      <thead>
+        <tr>
+          <th>Vir sevanja</th>
+          <th>Doza</th>
+          <th>Število banan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ena banana</td>
+          <td>0,1 μSv</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Povprečna dnevna izpostavljenost sevanju iz okolja</td>
+          <td>10 μSv</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Bivanje 16 km od jedrske elektrarne Three Mile Island med nesrečo leta 1979</td>
+          <td>80 μSv</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Največja dovoljena letna doza zaradi izpustov iz jedrske elektrarne</td>
+          <td>250 μSv</td>
+          <td>2 500</td>
+        </tr>
+        <tr>
+          <td>Računalniška tomografija prsnega koša</td>
+          <td>7 mSv</td>
+          <td>70 000</td>
+        </tr>
+        <tr>
+          <td>Smrtna doza</td>
+          <td>3,5 Sv</td>
+          <td>35 000 000</td>
+        </tr>
+      </tbody>
+    </table>
 
     <h2>Kritika</h2>
 
