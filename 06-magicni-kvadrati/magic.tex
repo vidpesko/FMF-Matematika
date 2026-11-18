@@ -7,6 +7,7 @@
 \usepackage{amsthm}
 
 \usepackage{url}
+\usepackage{booktabs}
 
 % Definicija okolij izrek, posledica
 {\theoremstyle{plain}
@@ -87,18 +88,14 @@ Primer magičnega kvadrata reda 3 je prikazan v tabeli ??. % sklic: table:mag3
    \caption{Magični kvadrat reda 3}
    \label{table:mag3}
    \large
-   \normalsize
    \begin{tabular}{|c|c|c|}
       \hline
       8 & 1 & 6 \\\hline
       3 & 5 & 7 \\\hline
       4 & 9 & 2 \\\hline
    \end{tabular}
+   \normalsize
 \end{table}
-
-%   8 & 1 & 6 \\\hline
-%   3 & 5 & 7 \\\hline
-%   4 & 9 & 2 \\\hline
 % Konec magičnega kvadrata
 
 \begin{definicija}
@@ -185,13 +182,13 @@ in zato kvadrat ni normalen.
 
 % Začetek okolja izrek
 \begin{izrek}
-   Magična konstanta normalnega magičnega kvadrata reda !!
+   Magična konstanta normalnega magičnega kvadrata reda \(n\)
    je enaka
    \begin{equation}
       % oznaka: eq:mc
       % Okolje `equation` je že prikazni matematični način,
       % zato tu izraz vpišite brez `\[` in `\]`.
-      !!
+      M_2(n) = \frac{1}{2} n (n^2 + 1).
    \end{equation}
 \end{izrek}
 % Konec okolja izrek
@@ -200,7 +197,7 @@ in zato kvadrat ni normalen.
 \begin{proof}
    V normalnem magičnem kvadratu reda \(n\) je vsota vseh nastopajočih
    števil (glej ?? na strani ??) enaka
-   !!. Ker imamo
+   \(1 + 2 + 3 + \ldots + n^2 = \sum_{k=1}^{n^2} k = \frac{1}{2} n^2 (n^2 + 1)\). Ker imamo
    v kvadratu \(n\) vrstic z enako vsoto, je vsota števil v eni vrstici
    enaka številu \(M_2(n)\). % sklica: eq:numbers, eq:numbers
 \end{proof}
@@ -209,11 +206,13 @@ in zato kvadrat ni normalen.
 Preprost račun pokaže, da je konstanti ?? analogna konstanta
 \(M_2(n;A,D)\) za magični kvadrat, v katerem so nameščena števila
 \(A\), \(A+D\), \(A+2D\), \ldots, \(A+(n^2-1)D\), enaka % sklic: eq:mc
-!!
+\[
+   M_2(n;A,D) = \frac{1}{2} n \left( 2A + D(n^2 - 1) \right).
+\]
 
 \begin{definicija}
       Če vsako od števil v normalnem magičnem kvadratu reda \(n\) odštejemo
-      od števila !!, dobimo nov magični kvadrat, ki je prvotnemu
+      od števila \(n^2 + 1\), dobimo nov magični kvadrat, ki je prvotnemu
       \emph{komplementaren}.
 \end{definicija}
 
@@ -228,11 +227,20 @@ Preprost račun pokaže, da je konstanti ?? analogna konstanta
 % - napis nad tabelo: Število različnih normalnih magičnih kvadratov
 % - oznaka: table:stevila
 % Začetek tabele
-      točna vrednost približek
-      red 1 2 3 4 5 6
+\begin{table}[!ht]
+   \centering
+   \caption{Število različnih normalnih magičnih kvadratov}
+   \label{table:stevila}
+   \begin{tabular}{lcccccc}\toprule
+      & \multicolumn{5}{c}{točna vrednost} & približek \\
+      \midrule
+      red & 1 & 2 & 3 & 4 & 5 & 6 \\
       % Decimalno vejico v matematičnem načinu zapišite kot {,},
       % sicer jo LaTeX izpiše kot ločilo, s presledkom za njo.
-      število kvadratov 1 0 1 880 275305224 !!
+      število kvadratov & 1 & 0 & 1 & 880 & 275305224 & \((1{,}7745 \pm 0{,}0016)10^{19}\) \\
+      \bottomrule
+   \end{tabular}
+\end{table}
 % Konec tabele
 
 Vse normalne magične kvadrate reda 4 je oštevilčil Frénicle de Bessy
