@@ -229,3 +229,6 @@ __marimo__/
 *.toc
 *.pdf
 *.zip
+*.bbl
+*.blg
+*.synctex(busy)
