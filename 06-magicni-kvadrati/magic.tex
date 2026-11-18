@@ -9,6 +9,9 @@
 \usepackage{url}
 \usepackage{booktabs}
 
+% Ukaz za magično konstanto
+\newcommand{\m}{\mathcal{M}_2}
+
 % Definicija okolij izrek, posledica
 {\theoremstyle{plain}
 \newtheorem{izrek}{Izrek}
@@ -190,7 +193,7 @@ in zato kvadrat ni normalen.
       \label{eq:mc}
       % Okolje `equation` je že prikazni matematični način,
       % zato tu izraz vpišite brez `\[` in `\]`.
-      M_2(n) = \frac{1}{2} n (n^2 + 1).
+      \m(n) = \frac{1}{2} n (n^2 + 1).
    \end{equation}
 \end{izrek}
 % Konec okolja izrek
@@ -201,15 +204,15 @@ in zato kvadrat ni normalen.
    števil (glej~\eqref{eq:numbers} na strani~\pageref{eq:numbers}) enaka
    \(1 + 2 + 3 + \ldots + n^2 = \sum_{k=1}^{n^2} k = \frac{1}{2} n^2 (n^2 + 1)\). Ker imamo
    v kvadratu \(n\) vrstic z enako vsoto, je vsota števil v eni vrstici
-   enaka številu \(M_2(n)\). % sklica: eq:numbers, eq:numbers
+   enaka številu \(\m(n)\). % sklica: eq:numbers, eq:numbers
 \end{proof}
 % Konec dokaza
 
 Preprost račun pokaže, da je konstanti~\eqref{eq:mc} analogna konstanta
-\(M_2(n;A,D)\) za magični kvadrat, v katerem so nameščena števila
+\(\m(n;A,D)\) za magični kvadrat, v katerem so nameščena števila
 \(A\), \(A+D\), \(A+2D\), \ldots, \(A+(n^2-1)D\), enaka % sklic: eq:mc
 \[
-   M_2(n;A,D) = \frac{1}{2} n \left( 2A + D(n^2 - 1) \right).
+   \m(n;A,D) = \frac{1}{2} n \left( 2A + D(n^2 - 1) \right).
 \]
 
 \begin{definicija}
