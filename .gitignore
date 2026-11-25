@@ -233,6 +233,7 @@ __marimo__/
 *.blg
 *.synctex(busy)
 !slika.pdf
+!PerrinPlot2.pdf
 *.idx
 *.ilg
 *.ind
