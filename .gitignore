@@ -233,8 +233,11 @@ __marimo__/
 *.blg
 *.synctex(busy)
 !slika.pdf
-.idx
-.ilg
-.ind
-.nav
-.snm
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+
+
+.DS_Store
