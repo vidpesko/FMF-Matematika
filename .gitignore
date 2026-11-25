@@ -232,3 +232,9 @@ __marimo__/
 *.bbl
 *.blg
 *.synctex(busy)
+!slika.pdf
+.idx
+.ilg
+.ind
+.nav
+.snm
